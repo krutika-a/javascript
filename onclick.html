@@ -2,17 +2,26 @@
 <head>
     <script>
         
-            function print_me();
+            function print_me()
         {
-            console.log(value);
+
+            input1 = document.getElementById("input1").value;
+
+            input2 = document.getElementById("input2").value;
+            document.getElementById("result").value = input1 + input2;
+
+
+            console.log("input1", input1);
+            console.log("input2", input2);
         }
     </script>
 </head>
 <title>my ex</title>
 <body>
 <form>
-Input no1:<input type="text"><br><br>
-Input no2:<input type="text"><br><br>
+Input no1:<input type="text" id="input1"><br><br>
+Input no2:<input type="text" id="input2"><br><br>
+Result :<input type="text" id="result"><br><br>
 <table border="0">
 <td>
 <tr><button>Add</button></tr><br><br>
@@ -22,7 +31,7 @@ Input no2:<input type="text"><br><br>
 </td>
 </table>
 <br><br>
-<button="Submit" onclick="print_me"></button>
+<button="Submit" onclick="print_me()">Submit</button>
 </form>
 </body>
 </html>

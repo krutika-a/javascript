@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script>
+            function print_common()
+            {
+                val1=Number(document.getElementById("in1").value);
+                val2=Number(document.getElementById("in2").value);
+                FResult=document.getElementById("res");
+                action=document.getElementById("act").value;
+
+
+
+              
+                 console.log("2=>",action);
+            
+
+
+            if(action=="Sum")
+            {
+                FResult.value=val1+val2;
+            }
+            
+            if(action=="Sub")
+            {
+                FResult.value=val1-val2;
+
+            }
+
+            if(action=="Mul")
+            {
+                FResult.value=val1*val2;
+
+            }
+            if(action=="Div")
+            {
+                FResult.value=val1/val2;
+
+            }
+            console.log("1=>",FResult.value);
+            }
+        </script>
+        input1:<input type="text" id="in1"><br>
+        input2:<input type="text" id="in2"><br>
+        Result:<input type="text" id="res"><br>
+        <input type="submit" onclick="print_common()">
+
+
+        <select name="action" id="act">
+            <option>Sum</option>
+            <option>Sub</option>
+            <option>Mul</option>
+            <option>Div</option>
+        </select>
+    </head>
+</html>
